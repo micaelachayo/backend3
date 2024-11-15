@@ -47,7 +47,7 @@ Si no funciona con `127.0.0.1`, utiliza `localhost`.
 ---
 
 ### 3. Generate Data
-**URL:** [http://127.0.0.1:8080/api/mocks/generateData?users=10&pets=5](http://127.0.0.1:8080/api/mocks/generateData?users=10&pets=5)  
+**URL:** [http://127.0.0.1:8080/api/mocks/generateData?users=10&pets=5](http://127.0.0.1:8080/api/mocks/generateData?users=5&pets=10)  
 **Descripción:** Genera e inserta datos de prueba en la base de datos.  
 
 **Parámetros de la URL:**
@@ -55,7 +55,7 @@ Si no funciona con `127.0.0.1`, utiliza `localhost`.
 - **pets** (opcional): Número de mascotas a generar (valor predeterminado: 50).
 
 **Ejemplo de uso:**  
-`/api/mocks/generateData?users=10&pets=10` generará 10 usuarios y 10 mascotas.
+`/api/mocks/generateData?users=10&pets=10` generará 5 usuarios y 10 mascotas.
 
 ![Generate Data](src/assets/img/generateData.png)
 ![Generate Data](src/assets/img/generateDataDB.png)
