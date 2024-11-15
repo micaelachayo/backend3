@@ -55,7 +55,7 @@ Si no funciona con `127.0.0.1`, utiliza `localhost`.
 - **pets** (opcional): Número de mascotas a generar (valor predeterminado: 50).
 
 **Ejemplo de uso:**  
-`/api/mocks/generateData?users=10&pets=10` generará 5 usuarios y 10 mascotas.
+`/api/mocks/generateData?users=5&pets=10` generará 5 usuarios y 10 mascotas.
 
-![Generate Data](src/assets/img/generateData.png)
+![Generate Data](src/assets/img/generateData.png) 
 ![Generate Data](src/assets/img/generateDataDB.png)
