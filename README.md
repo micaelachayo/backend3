@@ -58,3 +58,4 @@ Si no funciona con `127.0.0.1`, utiliza `localhost`.
 `/api/mocks/generateData?users=10&pets=10` generará 10 usuarios y 10 mascotas.
 
 ![Generate Data](src/assets/img/generateData.png)
+![Generate Data](src/assets/img/generateDataDB.png)
