@@ -19,19 +19,42 @@ ________________________________________________________________________________
 
 4. Ejecutar el proyecto:
     `npm run dev`
+_______________________________________________________________________________________________________
+# API de Mocking
 
-# POSTMAN
-### Para tener en cuenta antes de probar: La configuración de cada pc, son distintas. Si no le funciona con el **127.0.0.1**, utilice **localhost**
+## Consideraciones
+Para probar los endpoints, ten en cuenta que la configuración de red puede variar según tu computadora.  
+Si no funciona con `127.0.0.1`, utiliza `localhost`.
 
-- `http://127.0.0.1:8080/api/mocks/mockingpets`: Genera y devuelve una lista de 50 mascotas ficticias sin insertarlas en la base de datos.
-(src/assets/img/mockingpets.png)
+---
 
-- `http://127.0.0.1:8080/api/mocks/mockingusers`: Genera y devuelve una lista de 50 usuarios ficticios sin insertarlos en la base de datos
-(src/assets/img/mockingusers.png)
+## Endpoints
 
-- `http://127.0.0.1:8080/api/mocks/generateData?users=10&pets=5`: Genera e inserta datos de prueba en la base de datos. Parámetros de la URL:
+### 1. Mocking Pets
+**URL:** [http://127.0.0.1:8080/api/mocks/mockingpets](http://127.0.0.1:8080/api/mocks/mockingpets)  
+**Descripción:** Genera y devuelve una lista de 50 mascotas ficticias sin insertarlas en la base de datos.
 
-* users (opcional): Especifica cuántos usuarios se deben generar (por defecto, se generan 50).
-* pets (opcional): Especifica cuántas mascotas se deben generar (por defecto, se generan 50).
-Por ejemplo, la URL podría ser: /api/mocks/generateData?users=10&pets=10 para generar 10 usuarios y 10 mascotas.
-(src/assets/img/generateData.png)
+![Mocking Pets](src/assets/img/mockingpets.png)
+
+---
+
+### 2. Mocking Users
+**URL:** [http://127.0.0.1:8080/api/mocks/mockingusers](http://127.0.0.1:8080/api/mocks/mockingusers)  
+**Descripción:** Genera y devuelve una lista de 50 usuarios ficticios sin insertarlos en la base de datos.
+
+![Mocking Users](src/assets/img/mockingusers.png)
+
+---
+
+### 3. Generate Data
+**URL:** [http://127.0.0.1:8080/api/mocks/generateData?users=10&pets=5](http://127.0.0.1:8080/api/mocks/generateData?users=10&pets=5)  
+**Descripción:** Genera e inserta datos de prueba en la base de datos.  
+
+**Parámetros de la URL:**
+- **users** (opcional): Número de usuarios a generar (valor predeterminado: 50).
+- **pets** (opcional): Número de mascotas a generar (valor predeterminado: 50).
+
+**Ejemplo de uso:**  
+`/api/mocks/generateData?users=10&pets=10` generará 10 usuarios y 10 mascotas.
+
+![Generate Data](src/assets/img/generateData.png)
