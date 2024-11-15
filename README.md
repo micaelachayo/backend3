@@ -47,7 +47,7 @@ Si no funciona con `127.0.0.1`, utiliza `localhost`.
 ---
 
 ### 3. Generate Data
-**URL:** [http://127.0.0.1:8080/api/mocks/generateData?users=10&pets=5](http://127.0.0.1:8080/api/mocks/generateData?users=5&pets=10)  
+**URL:** [http://127.0.0.1:8080/api/mocks/generateData?users=5&pets=5](http://127.0.0.1:8080/api/mocks/generateData?users=5&pets=10)  
 **Descripción:** Genera e inserta datos de prueba en la base de datos.  
 
 **Parámetros de la URL:**
